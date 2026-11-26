@@ -1,16 +1,33 @@
 <html>
-  <head>
-    <title>Laundry Wallah</title>
-  </head>
-  <body>
+
+<head>
+  <title>Laundry Wallah</title>
+</head>
+
+<body>
+  <header>
     <h1>Welcome to Laundry Wallah/ Laundry Mart</h1>
-    <HR/>
-    <div style="text-align: center;">
-    </div>
-    <i><p>At Laundry Wallah / Laundry Mart, we believe fresh, clean clothes should be a part of everyday life without the hassle. We are dedicated to providing reliable, affordable, and professional laundry services that make your life easier. <p>From everyday washing and ironing to delicate garment care and dry cleaning, we treat every piece of clothing with the utmost care and attention. Our commitment to quality, hygiene, convenience, and customer satisfaction ensures a seamless laundry experience.</p> Let us take care of your laundry while you focus on what matters most.</p></i>
-    <img src="https://img.magnific.com/free-vector/self-service-laundry-equipment-accessories-cartoon-background-composition-with-washer-folded-clean-bedding-hanging-shirts-vector-illustration_1284-67589.jpg?semt=ais_hybrid&w=740&q=80" alt="Laundry Wallah" width="auto" height="200">
+    <HR />
+  </header>
+  <section id="about">
+    <i>
+      <p>At Laundry Wallah / Laundry Mart, we believe fresh, clean clothes should be a part of everyday life without the
+        hassle. We are dedicated to providing reliable, affordable, and professional laundry services that make your
+        life easier.</p>
+      <p>From everyday washing and ironing to delicate garment care and dry cleaning, we treat every piece of clothing
+        with the utmost care and attention. Our commitment to quality, hygiene, convenience, and customer satisfaction
+        ensures a seamless laundry experience.</p>
+      <p>Let us take care of your laundry while you focus on what matters most.</p>
+    </i>
+  </section>
+  <section id="image">
+    <img float="center" id="laundryImage"
+      src="https://img.magnific.com/free-vector/self-service-laundry-equipment-accessories-cartoon-background-composition-with-washer-folded-clean-bedding-hanging-shirts-vector-illustration_1284-67589.jpg?semt=ais_hybrid&w=740&q=80"
+      alt="Laundry Wallah" width="auto" height="200">
+  </section>
+  <section id="services">
     <h2>Our Services</h2>
-    <ul>
+    <ul type="disc">
       <li>Washing and Drying</li>
       <li>Ironing and Folding</li>
       <li>Dry Cleaning</li>
@@ -20,56 +37,68 @@
       <li>Pickup and Delivery</li>
       <li>...And More!</li>
     </ul>
+  </section>
+  <section id="price-list">
     <h2>Price List</h2>
     <table border="1" style="width: 50%;">
-      <tr>
-        <th>Service</th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <td>Washing and Drying</td>
-        <td>$5 per load</td>
-      </tr>
-      <tr>
-        <td>Ironing and Folding</td>
-        <td>$2 per item</td>
-      </tr>
-      <tr>
-        <td>Dry Cleaning</td>
-        <td>$10 per item</td>
-      </tr>
-      <tr>
-        <td>Stain Removal</td>
-        <td>$3 per item</td>
-      </tr>
-      <tr>
-        <td>Express Service</td>
-        <td>$15 per load</td>
-      </tr>
-      </table>  
-      <h1>Book Now</h1>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Washing and Drying</td>
+          <td>$5 per load</td>
+        </tr>
+        <tr>
+          <td>Ironing and Folding</td>
+          <td>$2 per item</td>
+        </tr>
+        <tr>
+          <td>Dry Cleaning</td>
+          <td>$10 per item</td>
+        </tr>
+        <tr>
+          <td>Stain Removal</td>
+          <td>$3 per item</td>
+        </tr>
+        <tr>
+          <td>Express Service</td>
+          <td>$15 per load</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="book-now">
+    <h2>Book Now</h2>
+    <form action="#">
       <table border="0">
         <tr>
-            <td><label for="name">Name:</label></td>
-            <td><input type="text" id="name" name="name"></td>
+          <td><label for="name">Name*:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
         </tr>
         <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email"></td>
+          <td><label for="email">Email*:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
         </tr>
         <tr>
-            <td><label for="number">Phone Number:</label></td>
-            <td><input type="tel" id="number" name="number"></td>
+          <td><label for="number">Phone Number*:</label></td>
+          <td><input type="tel" id="number" name="number" required></td>
         </tr>
         <tr>
-            <td></td>   
-            <td style="text-align: right;">
-                <button type="submit">Submit</button>
-            </td>
+          <td></td>
+          <td style="text-align: right;">
+            <button type="submit">Submit</button>
+          </td>
         </tr>
       </table>
-      <footer>
-        contact us at: info@laundrymart.com</a>
-      </footer>
-   </body>
+    </form>
+  </section>
+  <footer>
+    contact us at: <a href="mailto:info@laundrymart.com">info@laundrymart.com</a>
+  </footer>
+</body>
+
 </html>
